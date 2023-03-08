@@ -12,10 +12,10 @@
 <body>
     <div id="App">
         <nav id="navbar">
-            <div class="flex-center">
+            <div class="flex-center" style="align-items: flex-start;">
                 <div class="hero-heading">Ninestars</div>
             </div>
-            <div class="flex-center">
+            <div class="flex-center" style="align-items: flex-end;">
                 <ul>
                     <li class="hl-text">Home</li>
                     <li>About Us</li>
@@ -70,28 +70,28 @@
                 <div class="bottom-bar"></div>
                 <div class="sub-flex-center">
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./assests/ball-60.png" alt="img-1" width="40px">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <h2>Accusantium nemo, voluptatibus laboriosam ex ratione, at quaerat, maiores suscipit doloribus
                             inventore temporibus saepe neque rerum repellendus. Maxime consectetur nobis quam nulla.
                         </h2>
                     </div>
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./assests/list-view-50.png" alt="img-2" width="40px">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <h2>Accusantium nemo, voluptatibus laboriosam ex ratione, at quaerat, maiores suscipit doloribus
                             inventore temporibus saepe neque rerum repellendus. Maxime consectetur nobis quam nulla.
                         </h2>
                     </div>
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./assests/speedometer-50.png" alt="img-3" width="40px">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <h2>Accusantium nemo, voluptatibus laboriosam ex ratione, at quaerat, maiores suscipit doloribus
                             inventore temporibus saepe neque rerum repellendus. Maxime consectetur nobis quam nulla.
                         </h2>
                     </div>
                     <div class="card">
-                        <img src="" alt="">
+                        <img src="./assests/earth-globe-64.png" alt="img-4" width="40px">
                         <h4>Lorem ipsum dolor sit amet</h4>
                         <h2>Accusantium nemo, voluptatibus laboriosam ex ratione, at quaerat, maiores suscipit doloribus
                             inventore temporibus saepe neque rerum repellendus. Maxime consectetur nobis quam nulla.
@@ -208,7 +208,14 @@
                 <img src="./assests/client-4.png" alt="client-4" width="100px">
                 <img src="./assests/client-5.png" alt="client-5" width="100px">
             </div>
-            <div></div>
+            <div style="margin-top: 1rem;">
+                <div class="circle-icon"></div>
+                <div class="circle-icon" style="background-color: #e68a00;"></div>
+                <div class="circle-icon"></div>
+                <div class="circle-icon"></div>
+                <div class="circle-icon"></div>
+                <div class="circle-icon"></div>
+            </div>
         </div>
     </section>
     <section class="section bottom-pad">
@@ -244,7 +251,7 @@
                     </div>
                 </div>
                 <form id="contact-form" class="flex-center address-card" style="align-items: flex-start;">
-                    <div>
+                    <div class="sub-flex-center">
                         <div>
                             <label for="name">Your Name</label>
                             <br>
@@ -256,16 +263,15 @@
                             <input type="text" id="email" placeholder="your Email">
                         </div>
                     </div>
-                    <div>
-                        <label for="subject">Subject</label>
-                        <br>
-                        <input type="text" id="subject" placeholder="Subject">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <br>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
+
+                    <label for="subject">Subject</label>
+                    <br>
+                    <input type="text" id="subject" placeholder="Subject">
+
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="message"></textarea>
+
                     <div style="margin: 0 auto">
                         <button class="hl-button">Send Message</button>
                     </div>
@@ -295,28 +301,48 @@
             </div>
             <div>
                 <h3 style="font-weight: bold;">Useful Links</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Terms of services</li>
-                    <li>Privacy policy</li>
+                <ul class="styled-list">
+                    <li class="gray-cl">Home</li>
+                    <li class="gray-cl">About</li>
+                    <li class="gray-cl">Services</li>
+                    <li class="gray-cl">Terms of services</li>
+                    <li class="gray-cl">Privacy policy</li>
                 </ul>
             </div>
             <div>
                 <h3 style="font-weight: bold;">Our Services</h3>
-                <ul>
-                    <li>Web Design</li>
-                    <li>Web Development</li>
-                    <li>Product Managment</li>
-                    <li>Marketing</li>
-                    <li>Graphic Design</li>
+                <ul class="styled-list">
+                    <li class="gray-cl">Web Design</li>
+                    <li class="gray-cl">Web Development</li>
+                    <li class="gray-cl">Product Managment</li>
+                    <li class="gray-cl">Marketing</li>
+                    <li class="gray-cl">Graphic Design</li>
                 </ul>
             </div>
             <div>
                 <h3 style="font-weight: bold;">Our Social Networks</h3>
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis architecto aperiam necessitatibus placeat.</h2>
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis architecto aperiam necessitatibus
+                    placeat.
+                </h2>
+                <div>
+                    <div class="social-icons">
+                        <img src="./assests/twitter-50.png" alt="twitter" width="20px">
+                    </div>
+                    <div class="social-icons">
+                        <img src="./assests/facebook-32.png" alt="facebook" width="20px">
+                    </div>
+                    <div class="social-icons">
+                        <img src="./assests/instagram-50.png" alt="instagram" width="20px">
+                    </div>
+                    <div class="social-icons">
+                        <img src="./assests/skype-50.png" alt="skype" width="20px">
+                    </div>
+                    <div class="social-icons">
+                        <img src="./assests/linkedin-2-50.png" alt="linkedin" width="20px">
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="pink-bg footer">
@@ -324,6 +350,9 @@
             &copy; Copyright <b>Ninestars</b>. All Rights Reserved.
         </div>
         <div>Designed By <span style="color: #e68a00">BootstrapMade</span></div>
+        <button id="scroll-up">
+            <img src="./assests/arrow-up-67.png" alt="scroll-up" width="20px">
+        </button>
     </section>
     </div>
 </body>

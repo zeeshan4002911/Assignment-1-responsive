@@ -63,6 +63,7 @@ body {
 
 .section h4 {
     margin: 0;
+    padding-top: 1rem;
 }
 
 #options>* {
@@ -81,11 +82,12 @@ body {
 
 .bottom-gray {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: baseline;
     gap: 10px;
     border-bottom: 1px solid #b6b6b6;
     margin: 0 1rem;
+    width: 100%;
 }
 
 .bottom-gray h3 {
@@ -106,9 +108,11 @@ body {
     height: 100vh;
 }
 
-form input {
-    border: 1px solid gray;
+form input,
+textarea {
+    border: 1px solid rgb(167, 167, 167);
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #message {
@@ -121,10 +125,43 @@ form input {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.styled-list>li {
+    margin: 0.5rem 0;
+    background: url('/assests/chevron-right-30.png') no-repeat left center;
+    background-size: 15px 10px;
+    padding: 5px 5px 10px 20px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.social-icons {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e68a00;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+}
+
 .footer {
-    padding: 1rem 6rem;
+    padding: 1.25rem 6rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+
+#scroll-up {
+    background-color: #e68a00;
+    padding: 0.5rem;
+    position: absolute;
+    border: none;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* Utility Classes */
@@ -208,6 +245,14 @@ form input {
     margin: 0 auto;
 }
 
+.circle-icon {
+    border: 1px solid #e68a00;
+    padding: 0.25rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+}
+
 .flex-side {
     display: flex;
     align-items: center;
@@ -219,6 +264,8 @@ form input {
     box-shadow: 1px 1px 20px 1px #ccc;
     padding: 0.5rem 1rem;
 }
+
+/* Media Query for Mobile View */
 
 @media only screen and (max-width: 500px) {
     #navbar ul {
@@ -259,18 +306,24 @@ form input {
 
     #contact-form {
         width: 90vw;
-        justify-content: center;
-        align-items: center;
     }
 
     #message {
-        width: 110%;
+        width: 100%;
         height: 50vh;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    #footer-section {
+        display: block;
     }
 
     .footer {
         display: block;
-        padding: 1rem;
+        padding: 1rem 1rem 3rem;
         text-align: center;
     }
 }
