@@ -108,6 +108,10 @@ body {
   width: 100%;
 }
 
+.team-img:hover {
+  transform: scale(1.02);
+}
+
 .address-card {
   border-top: 2px solid #eb5d1e;
   border-bottom: 2px solid #eb5d1e;
@@ -157,7 +161,7 @@ textarea {
 
 .styled-list > li {
   margin: 0.5rem 0;
-  background: url("/assests/chevron-right-30.png") no-repeat left center;
+  background: url(/assests/chevron-right-30.png) no-repeat left center;
   background-size: 15px 10px;
   padding: 5px 5px 10px 20px;
   list-style: none;
@@ -167,6 +171,10 @@ textarea {
   font-size: small;
 }
 
+.styled-list > li:hover {
+  transform: translateX(10px);
+}
+
 .social-icons {
   background-color: #eb5d1e;
   color: white;
@@ -174,6 +182,10 @@ textarea {
   border-radius: 50%;
   display: inline-block;
   margin: 2px;
+}
+
+.social-icons:hover {
+  transform: scale(1.2);
 }
 
 .footer {
@@ -206,7 +218,7 @@ textarea {
   color: white;
 }
 
-.hl-button:hover {
+.hl-button:active {
   transform: scale(1.05);
 }
 
