@@ -1,0 +1,107 @@
+/* Utility Classes */
+$primary-color: #eb5d1e;
+
+@mixin flex-box($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.hl-text {
+  color: $primary-color;
+}
+
+.hl-button {
+  background-color: rgba(235, 93, 30, 255);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.menu {
+  display: none;
+}
+
+.pink-bg {
+  background-color: rgba(254, 248, 245, 255);
+}
+
+.sub-flex-center {
+  @include flex-box;
+  gap: 1rem;
+}
+
+.gray-cl {
+  color: gray;
+}
+
+.gray-cl-lt {
+  color: rgb(189, 189, 189);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.bottom-bar {
+  border-bottom: 2px solid $primary-color;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  width: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px 1px #ccc;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+.flex-center {
+  @include flex-box($direction: column);
+}
+
+.hero-heading {
+  font-size: xx-large;
+}
+
+.bottom-pad {
+  padding-bottom: 5rem;
+}
+
+.txt-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.circle-icon {
+  border: 1px solid $primary-color;
+  padding: 0.25rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.flex-side {
+  @include flex-box;
+  gap: 1rem;
+}
+
+.white-box {
+  border: none;
+  box-shadow: 1px 1px 20px 1px #ccc;
+  padding: 0.5rem 5rem;
+  width: 30vw;
+}
