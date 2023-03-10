@@ -165,7 +165,7 @@ textarea {
 .social-icons {
   background-color: #eb5d1e;
   color: white;
-  padding: 0.5em 0.6em;
+  padding: 0.25rem 0.5rem;
   border-radius: 50%;
   display: inline-block;
   margin: 2px;
@@ -189,6 +189,11 @@ textarea {
 }
 
 /* Utility Classes */
+
+a:hover {
+  text-decoration: none;
+  color: #eb5d1e;
+}
 
 .hl-text {
   color: #eb5d1e;
