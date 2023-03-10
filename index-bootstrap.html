@@ -27,7 +27,7 @@
       >
         <div class="hero-heading">Ninestars</div>
         <div>
-          <ul style="margin-bottom: 0">
+          <ul class="mb-0">
             <li class="hl-text">Home</li>
             <li>About Us</li>
             <li>Services</li>
@@ -53,19 +53,23 @@
       </nav>
       <section class="section pink-bg reverse">
         <img src="./assests/hero-img.svg" alt="background-hero" />
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h1>Better digital experinence with Ninestars</h1>
-          <h3 class="gray-cl">
+          <h4 class="gray-cl py-4">
             We are team of talented designers making websites using bootstrap
-          </h3>
+          </h4>
           <button class="hl-button">Get Started</button>
         </div>
       </section>
       <section class="section">
         <img src="./assests/about-img.svg" alt="background-about" />
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h1>Voluptatem dignissimos provident quasi</h1>
-          <h2 class="gray-cl" style="margin-bottom: 2rem">
+          <h2 class="gray-cl mb-4 mt-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
             cumque accusantium ab delectus porro facere nisi quasi quo odio
           </h2>
@@ -90,14 +94,14 @@
         </div>
       </section>
       <section class="section pink-bg bottom-pad">
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h4 class="gray-cl-lt">Services</h4>
-          <h1 style="text-align: center">
-            Check out the great services we offer
-          </h1>
+          <h1 class="text-center">Check out the great services we offer</h1>
           <div class="bottom-bar"></div>
           <div class="sub-flex-center">
-            <div class="card">
+            <div class="custom-card">
               <img src="./assests/ball-60.png" alt="img-1" width="40px" />
               <h4>Lorem ipsum dolor sit amet</h4>
               <h2>
@@ -106,7 +110,7 @@
                 neque rerum repellendus. Maxime consectetur nobis quam nulla.
               </h2>
             </div>
-            <div class="card">
+            <div class="custom-card">
               <img src="./assests/list-view-50.png" alt="img-2" width="40px" />
               <h4>Lorem ipsum dolor sit amet</h4>
               <h2>
@@ -115,7 +119,7 @@
                 neque rerum repellendus. Maxime consectetur nobis quam nulla.
               </h2>
             </div>
-            <div class="card">
+            <div class="custom-card">
               <img
                 src="./assests/speedometer-50.png"
                 alt="img-3"
@@ -128,7 +132,7 @@
                 neque rerum repellendus. Maxime consectetur nobis quam nulla.
               </h2>
             </div>
-            <div class="card">
+            <div class="custom-card">
               <img
                 src="./assests/earth-globe-64.png"
                 alt="img-4"
@@ -145,7 +149,9 @@
         </div>
       </section>
       <section class="section bottom-pad">
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h4 class="gray-cl-lt">Portfolio</h4>
           <h1 style="text-align: center">Check out our beautiful portfolio</h1>
           <div class="bottom-bar"></div>
@@ -259,7 +265,9 @@
         </div>
       </section>
       <section class="section bottom-pad">
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h4 class="gray-cl-lt">Team</h4>
           <h1 style="text-align: center">Our Team is always here to help</h1>
           <div class="bottom-bar"></div>
@@ -280,13 +288,15 @@
         </div>
       </section>
       <section class="section pink-bg bottom-pad">
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h4 class="gray-cl-lt">Clients</h4>
           <h1 style="text-align: center">They trusted us</h1>
           <div class="bottom-bar"></div>
           <div
-            class="flex-center"
-            style="gap: 4rem; flex-direction: row; flex-wrap: wrap"
+            class="d-flex justify-content-center align-items-center flex-wrap"
+            style="gap: 4rem"
           >
             <img src="./assests/client-2.png" alt="client-2" width="100px" />
             <img src="./assests/client-3.png" alt="client-3" width="100px" />
@@ -304,41 +314,42 @@
         </div>
       </section>
       <section class="section bottom-pad">
-        <div class="flex-center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
           <h4 class="gray-cl-lt">Contact Us</h4>
           <h1 style="text-align: center">Contact us to get started</h1>
           <div class="bottom-bar"></div>
           <div class="sub-flex-center" style="gap: 2rem">
             <div
-              class="flex-center address-card"
-              style="align-items: flex-start"
+              class="d-flex justify-content-center align-items-start flex-column address-card"
             >
-              <div class="flex-side">
+              <div class="d-flex align-items-center">
                 <img
                   src="./assests/place-marker-50.png"
                   alt="location"
                   width="30px"
                 />
-                <div>
-                  <h3 style="font-weight: 600">Location</h3>
+                <div class="ml-4">
+                  <h4 class="font-weight-bold py-2">Location</h4>
                   <h2 class="gray-cl">A108 Adam Street, New York, NY 535022</h2>
                 </div>
               </div>
-              <div class="flex-side">
+              <div class="d-flex align-items-center">
                 <img src="./assests/mail-50.png" alt="email" width="30px" />
-                <div>
-                  <h3 style="font-weight: 600">Email</h3>
+                <div class="ml-4">
+                  <h4 class="font-weight-bold py-2">Email</h4>
                   <h2 class="gray-cl">info@example.com</h2>
                 </div>
               </div>
-              <div class="flex-side">
+              <div class="d-flex align-items-center">
                 <img
                   src="./assests/cellphone-25.png"
                   alt="phone"
                   width="30px"
                 />
-                <div>
-                  <h3 style="font-weight: 600">Call</h3>
+                <div class="ml-4">
+                  <h4 class="font-weight-bold py-2">Call</h4>
                   <h2 class="gray-cl">+1 6733 675 866</h2>
                 </div>
               </div>
@@ -379,12 +390,14 @@
         </div>
       </section>
       <section class="section pink-bg bottom-pad">
-        <div class="flex-center">
-          <h3><b> Join Our Newsletter </b></h3>
-          <h5 class="gray-cl" style="text-align: center">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
+          <h4 class="font-weight-bold mb-3">Join Our Newsletter</h4>
+          <p class="gray-cl text-align-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            labore velit fugit in porro cupiditate corrupti.
-          </h5>
+            labore velit fugit.
+          </p>
           <div>
             <input type="text" class="white-box" />
             <button class="hl-button">Subscribe</button>
@@ -395,7 +408,7 @@
         <div id="footer-section">
           <div>
             <h1 style="font-weight: 300">Ninestars</h1>
-            <h2 class="gray-cl">
+            <h2 class="mt-3 gray-cl">
               A108 Adam Street, New York, NY 535022, United States
             </h2>
             <br />
@@ -454,7 +467,9 @@
           </div>
         </div>
       </section>
-      <section class="pink-bg footer">
+      <section
+        class="d-flex justify-content-between position-relative pink-bg footer"
+      >
         <div>&copy; Copyright <b>Ninestars</b>. All Rights Reserved.</div>
         <div>Designed By <span style="color: #e68a00">BootstrapMade</span></div>
         <button id="scroll-up">
