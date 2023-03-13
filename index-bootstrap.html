@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1</title>
 
+    <link rel="stylesheet" href="style-bootstrap.css" />
     <!-- CSS with Bootstrap -->
     <link
       rel="stylesheet"
@@ -33,18 +34,17 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style-bootstrap.css" />
   </head>
 
   <body>
     <div id="App">
       <nav
-        class="d-flex justify-content-between align-items-center"
+        class="d-flex justify-content-between align-items-center py-2"
         id="navbar"
       >
         <div class="hero-heading">Ninestars</div>
         <div>
-          <ul class="mb-0">
+          <ul class="mb-0 d-sm-none d-md-block">
             <li>
               <a href="#home" class="hl-text"> Home</a>
             </li>
@@ -91,8 +91,8 @@
                 <a class="dropdown-item" href="#contact">Contact</a>
                 <a class="dropdown-item" href="#">
                   <button
-                    class="dropdown-item hl-button"
-                    style="border-radius: 25px"
+                    class="hl-button dropdown-item text-white"
+                    style="border-radius: 25px; background-color: #e68a00;"
                   >
                     Get Started
                   </button>
@@ -103,40 +103,40 @@
         </div>
       </nav>
       <section class="section pink-bg reverse" id="home">
-        <img src="./assests/hero-img.svg" alt="background-hero" />
+        <img src="./assests/hero-img.svg" alt="background-hero" class="my-3" />
         <div
-          class="d-flex justify-content-center align-items-center flex-column"
+          class="d-flex justify-content-center align-items-start flex-column"
         >
           <h1>Better digital experinence with Ninestars</h1>
-          <h4 class="gray-cl py-4">
+          <h4 class="text-muted font-weight-normal py-4">
             We are team of talented designers making websites using bootstrap
           </h4>
           <button class="hl-button">Get Started</button>
         </div>
       </section>
-      <section class="section" id="about-us">
-        <img src="./assests/about-img.svg" alt="background-about" />
+      <section class="section my-3" id="about-us">
+        <img src="./assests/about-img.svg" alt="background-about" class="my-5" />
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <h1>Voluptatem dignissimos provident quasi</h1>
-          <h2 class="gray-cl mb-4 mt-3">
+          <h2 class="text-muted my-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
             cumque accusantium ab delectus porro facere nisi quasi quo odio
           </h2>
           <div class="sub-flex-center">
             <div>
               <img src="./assests/list-view-50.png" alt="list" width="32px" />
-              <h4>Corporis Volumptate sit</h4>
-              <h2 class="gray-cl">
+              <h4 class="mb-2">Corporis Volumptate sit</h4>
+              <h2 class="text-muted">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quisquam magnam tempora quod.
               </h2>
             </div>
             <div>
               <img src="./assests/cube-32.png" alt="cube" />
-              <h4>Ullamco laboris nisi</h4>
-              <h2 class="gray-cl">
+              <h4 class="mb-2">Ullamco laboris nisi</h4>
+              <h2 class="text-muted">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
                 tempora quod.
               </h2>
@@ -154,20 +154,18 @@
           <div class="sub-flex-center">
             <div class="custom-card">
               <img src="./assests/ball-60.png" alt="img-1" width="40px" />
-              <h4>Lorem ipsum dolor sit amet</h4>
+              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
               <h2>
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
-                quaerat, maiores suscipit doloribus inventore temporibus saepe
-                neque rerum repellendus. Maxime consectetur nobis quam nulla.
+                quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
             <div class="custom-card">
               <img src="./assests/list-view-50.png" alt="img-2" width="40px" />
-              <h4>Lorem ipsum dolor sit amet</h4>
+              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
               <h2>
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
-                quaerat, maiores suscipit doloribus inventore temporibus saepe
-                neque rerum repellendus. Maxime consectetur nobis quam nulla.
+                quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
             <div class="custom-card">
@@ -176,11 +174,10 @@
                 alt="img-3"
                 width="40px"
               />
-              <h4>Lorem ipsum dolor sit amet</h4>
+              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
               <h2>
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
-                quaerat, maiores suscipit doloribus inventore temporibus saepe
-                neque rerum repellendus. Maxime consectetur nobis quam nulla.
+                quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
             <div class="custom-card">
@@ -189,11 +186,10 @@
                 alt="img-4"
                 width="40px"
               />
-              <h4>Lorem ipsum dolor sit amet</h4>
+              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
               <h2>
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
-                quaerat, maiores suscipit doloribus inventore temporibus saepe
-                neque rerum repellendus. Maxime consectetur nobis quam nulla.
+                quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
           </div>
@@ -206,11 +202,11 @@
           <h4 class="gray-cl-lt">Portfolio</h4>
           <h1 class="text-center">Check out our beautiful portfolio</h1>
           <div class="bottom-bar"></div>
-          <div id="options" class="bottom-pad">
-            <span class="hl-text">All</span>
-            <span>App</span>
-            <span>Card</span>
-            <span>Web</span>
+          <div class="mb-4 font-weight-bold">
+            <span class="hl-text mx-2">All</span>
+            <span class="mx-2">App</span>
+            <span class="mx-2">Card</span>
+            <span class="mx-2">Web</span>
           </div>
           <div class="sub-flex-center flex-wrap">
             <div class="img-card">
@@ -244,16 +240,16 @@
         </div>
       </section>
       <section
-        class="section pink-bg bottom-pad flex-column"
+        class="section pink-bg flex-column"
       >
         <div class="mb-3">
           <h4 class="gray-cl-lt txt-center">F.A.Q</h4>
           <h1 class="txt-center">Frequently Asked Questions</h1>
-          <div class="bottom-bar txt-center"></div>
+          <div class="bottom-bar mx-auto"></div>
         </div>
-        <div class="d-flex align-items-start flex-column text-muted">
+        <div class="d-flex align-items-start flex-column">
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -263,7 +259,7 @@
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           </div>
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -273,7 +269,7 @@
             <h3>Sed praesentium repellendus eos accusantium quae.</h3>
           </div>
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -283,7 +279,7 @@
             <h3>laborum quos quas minima eligendi iure.</h3>
           </div>
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -293,7 +289,7 @@
             <h3>Voluptates fuga quibusdam nobis.</h3>
           </div>
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -303,7 +299,7 @@
             <h3>Iure amet dolorum, commodi quo impedit.</h3>
           </div>
           <div
-            class="d-flex justify-content-start align-items-baseline bottom-gray"
+            class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
           >
             <img
               src="./assests/down-24.png"
@@ -353,7 +349,7 @@
             <img src="./assests/client-4.png" alt="client-4" width="100px" />
             <img src="./assests/client-5.png" alt="client-5" width="100px" />
           </div>
-          <div class="mt-4">
+          <div class="mt-2">
             <div class="circle-icon"></div>
             <div class="circle-icon" style="background-color: #e68a00"></div>
             <div class="circle-icon"></div>
@@ -372,7 +368,7 @@
           <div class="bottom-bar"></div>
           <div class="sub-flex-center" style="gap: 2rem">
             <div
-              class="d-flex justify-content-center align-items-start flex-column address-card"
+              class="d-flex justify-content-center align-items-start flex-column address-card p-4"
             >
               <div class="d-flex align-items-center">
                 <div class="pink-bg p-2 rounded-circle">
@@ -382,18 +378,18 @@
                     width="30px"
                   />
                 </div>
-                <div class="ml-4">
-                  <h4 class="font-weight-bold py-2">Location</h4>
-                  <h2 class="gray-cl">A108 Adam Street, New York, NY 535022</h2>
+                <div class="ml-3">
+                  <h4 class="font-weight-bold py-2 text-muted">Location</h4>
+                  <h2 class="text-muted">A108 Adam Street, New York, NY 535022</h2>
                 </div>
               </div>
               <div class="d-flex align-items-center">
                 <div class="pink-bg p-2 rounded-circle">
                   <img src="./assests/mail-50.png" alt="email" width="30px" />
                 </div>
-                <div class="ml-4">
-                  <h4 class="font-weight-bold py-2">Email</h4>
-                  <h2 class="gray-cl">info@example.com</h2>
+                <div class="ml-3">
+                  <h4 class="font-weight-bold py-2 text-muted">Email</h4>
+                  <h2 class="text-muted">info@example.com</h2>
                 </div>
               </div>
               <div class="d-flex align-items-center">
@@ -404,19 +400,19 @@
                     width="30px"
                   />
                 </div>
-                <div class="ml-4">
-                  <h4 class="font-weight-bold py-2">Call</h4>
-                  <h2 class="gray-cl">+1 6733 675 866</h2>
+                <div class="ml-3">
+                  <h4 class="font-weight-bold py-2 text-muted">Call</h4>
+                  <h2 class="text-muted">+1 6733 675 866</h2>
                 </div>
               </div>
               <div>
                 <img src="./assests/location.png" alt="location" width="100%" />
               </div>
             </div>
-            <form action="#" class="address-card">
+            <form action="#" class="address-card p-5">
               <div class="container-md">
                 <div class="row">
-                  <div class="col-md-6 pl-0">
+                  <div class="col-md-6 px-0">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" placeholder="your Name" />
                   </div>
@@ -433,7 +429,7 @@
                   <label for="message">Message</label>
                   <textarea name="message" id="message"></textarea>
                 </div>
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center mt-4">
                   <button type="submit" class="hl-button">Send Message</button>
                 </div>
               </div>
@@ -446,30 +442,29 @@
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <h4 class="font-weight-bold mb-3">Join Our Newsletter</h4>
-          <p class="gray-cl text-align-center">
+          <p class="text-muted text-align-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
             labore velit fugit.
           </p>
-          <div>
-            <input type="text" class="white-box" />
+          <div class="d-flex align-items-stretch pb-4">
+            <input type="text" class="white-box" style="width: 100%;"/>
             <button class="hl-button">Subscribe</button>
           </div>
         </div>
       </section>
-      <section class="section bottom-pad">
+      <section class="section bottom-pad pt-5">
         <div id="footer-section">
           <div class="mb-4">
             <h1 class="font-weight-light">Ninestars</h1>
-            <h2 class="mt-3 gray-cl">
+            <h2 class="mb-4 mt-2 text-muted w-50" style="line-height: 1.25rem;">
               A108 Adam Street, New York, NY 535022, United States
             </h2>
-            <br />
-            <h2 class="gray-cl">
-              <span class="font-weight-bold text-dark">Phone:</span> +1
+            <h2 class="text-muted">
+              <span class="font-weight-bold">Phone:</span> +1
               6733 675 866
             </h2>
-            <h2 class="gray-cl">
-              <span class="font-weight-bold text-dark">Email:</span>
+            <h2 class="text-muted">
+              <span class="font-weight-bold">Email:</span>
               info@example.com
             </h2>
           </div>
@@ -495,11 +490,11 @@
           </div>
           <div>
             <h3>Our Social Networks</h3>
-            <h2 class="gray-cl">
+            <h2>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               architecto aperiam necessitatibus placeat.
             </h2>
-            <div class="pb-4">
+            <div class="pb-3">
               <div class="social-icons">
                 <i class="bi bi-twitter"></i>
               </div>
@@ -524,7 +519,7 @@
       >
         <div>&copy; Copyright <b>Ninestars</b>. All Rights Reserved.</div>
         <div>Designed By <span style="color: #e68a00">BootstrapMade</span></div>
-        <button id="scroll-up">
+        <button id="scroll-up" class="rounded">
           <img src="./assests/arrow-up-67.png" alt="scroll-up" width="20px" />
         </button>
       </section>

@@ -18,7 +18,7 @@ body {
   background-color: #fff;
   top: 0;
   z-index: 1;
-  box-shadow: 0 0 10px rgb(168, 168, 168);
+  box-shadow: 0 0 10px rgb(201, 201, 201);
   color: rgba(128, 112, 103, 255);
   padding: 0 6rem;
 }
@@ -44,7 +44,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 1rem 6rem;
-  gap: 5rem;
 }
 
 .section > img {
@@ -76,11 +75,6 @@ body {
   margin-top: 0;
 }
 
-#options > * {
-  padding: 0 0.5rem;
-  font-weight: 600;
-}
-
 .img-card {
   width: 25vw;
 }
@@ -88,13 +82,13 @@ body {
 .img-card > img {
   border-radius: 5px;
   width: 25vw;
+  height: 100%;
 }
 
 .bottom-gray {
   gap: 10px;
-  border-bottom: 1px solid #b6b6b6;
+  border-bottom: 1px solid #ebebeb;
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .bottom-gray h3 {
@@ -113,8 +107,7 @@ body {
 .address-card {
   border-top: 2px solid #eb5d1e;
   border-bottom: 2px solid #eb5d1e;
-  padding: 2rem;
-  box-shadow: 1px 1px 20px 1px #ccc;
+  box-shadow: 0 0 20px 1px #e2e2e2;
 }
 
 .address-card > * {
@@ -128,9 +121,12 @@ textarea {
   margin-bottom: 1rem;
 }
 
-#name,
 #email {
   width: 100%;
+}
+
+#name {
+  width: 95%;
 }
 
 #subject {
@@ -138,7 +134,7 @@ textarea {
 }
 
 #message {
-  width: 40vw;
+  width: 45vw;
   height: 50vh;
 }
 
@@ -205,7 +201,7 @@ textarea {
 }
 
 .hl-button {
-  background-color: rgba(235, 93, 30, 255);
+  background-color: rgb(235, 93, 30);
   padding: 0.25rem 1.5rem;
   border-radius: 4px;
   border: none;
@@ -224,10 +220,6 @@ textarea {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-.gray-cl {
-  color: gray;
 }
 
 .gray-cl-lt {
@@ -251,11 +243,15 @@ textarea {
   padding: 2rem;
   text-align: center;
   cursor: pointer;
-  box-shadow: 1px 1px 20px 1px #ccc;
+  box-shadow: 0 0 20px 1px #e2e2e2;
 }
 
 .custom-card:hover {
   background-color: #ccc;
+}
+
+.custom-card h2 {
+  line-height: 1.5rem;
 }
 
 .hero-heading {
@@ -281,7 +277,7 @@ textarea {
 
 .white-box {
   border: none;
-  box-shadow: 1px 1px 20px 1px #ccc;
+  box-shadow: 0 0 20px 1px #e2e2e2;
   padding: 0.25rem 5rem;
   width: 30vw;
 }
@@ -302,6 +298,10 @@ textarea {
   .section {
     padding: 1rem;
     display: block;
+  }
+
+  #home {
+    padding-top: 6rem;
   }
 
   .section > img {
@@ -325,6 +325,10 @@ textarea {
     height: 50vh;
   }
 
+  #name {
+    width: 100%;
+  }
+
   form input {
     width: 100%;
   }
@@ -334,8 +338,8 @@ textarea {
   }
 
   .footer {
-    display: block;
-    padding: 1rem 1rem 4rem;
+    padding: 2rem 1rem 4rem;
+    flex-direction: column;
     text-align: center;
   }
 }
