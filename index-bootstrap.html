@@ -33,47 +33,54 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-
   </head>
 
   <body>
     <div id="App">
       <nav
-        class="d-flex justify-content-between align-items-center py-2"
+        class="d-flex justify-content-between align-items-center py-2 px-md-5"
         id="navbar"
       >
-        <div class="hero-heading">Ninestars</div>
+        <div class="h2 font-weight-normal px-2">Ninestars</div>
         <div>
-          <ul class="mb-0 d-sm-none d-md-block">
-            <li>
+          <ul class="mb-0 d-lg-block d-none list-style-none">
+            <li class="p-2">
               <a href="#home" class="hl-text"> Home</a>
             </li>
             <li><a href="#about-us" class="text-muted">About Us</a></li>
-            <li><a href="#services" class="text-muted">Services</a></li>
-            <li><a href="#portfolio" class="text-muted">Portfolio</a></li>
-            <li><a href="#team" class="text-muted">Team</a></li>
-            <li>
-              Drop Down
-              <img
-                src="./assests/down-24.png"
-                alt="dropdown"
-                class="dropdown"
-              />
+            <li class="p-2">
+              <a href="#services" class="text-muted">Services</a>
             </li>
-            <li><a href="#contact" class="text-muted">Contact</a></li>
-            <li>
+            <li class="p-2">
+              <a href="#portfolio" class="text-muted">Portfolio</a>
+            </li>
+            <li class="p-2"><a href="#team" class="text-muted">Team</a></li>
+            <li class="p-2">
+              <a href="" class="text-muted">
+                Drop Down
+                <img
+                  src="./assests/down-24.png"
+                  alt="dropdown"
+                  class="dropdown vertical-align-baseline"
+                />
+              </a>
+            </li>
+            <li class="p-2">
+              <a href="#contact" class="text-muted">Contact</a>
+            </li>
+            <li class="p-2">
               <button class="hl-button" style="border-radius: 25px">
                 Get Started
               </button>
             </li>
           </ul>
           <div class="d-sm-block d-md-none">
-            <div class="btn-group dropleft">
+            <div class="btn-group collapse">
               <button
                 type="button"
                 class="btn btn-light rounded"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                data-toggle="collapse"
+                data-target="#collapseNav"
                 aria-expanded="false"
               >
                 <img
@@ -82,61 +89,80 @@
                   class="d-sm-block d-md-none"
                 />
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#home">Home</a>
-                <a class="dropdown-item" href="#about-us">About Us</a>
-                <a class="dropdown-item" href="#services">Services</a>
-                <a class="dropdown-item" href="#portfolio">Portfolio</a>
-                <a class="dropdown-item" href="#team">Team</a>
-                <a class="dropdown-item" href="#contact">Contact</a>
-                <a class="dropdown-item" href="#">
-                  <button
-                    class="hl-button dropdown-item text-white"
-                    style="border-radius: 25px; background-color: rgb(235, 93, 30);"
-                  >
-                    Get Started
-                  </button>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </nav>
-      <section class="section pink-bg reverse" id="home">
-        <img src="./assests/hero-img.svg" alt="background-hero" class="my-3" />
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div
+              class="collapse multi-collapse position-fixed"
+              id="collapseNav"
+            >
+              <a class="dropdown-item px-2" href="#home">Home</a>
+              <a class="dropdown-item px-2" href="#about-us">About Us</a>
+              <a class="dropdown-item px-2" href="#services">Services</a>
+              <a class="dropdown-item px-2" href="#portfolio">Portfolio</a>
+              <a class="dropdown-item px-2" href="#team">Team</a>
+              <a class="dropdown-item px-2" href="#contact">Contact</a>
+              <a class="dropdown-item px-2" href="#">
+                <button
+                  class="hl-button dropdown-item text-white mb-4"
+                  style="
+                    border-radius: 25px;
+                    background-color: rgb(235, 93, 30);
+                  "
+                >
+                  Get Started
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="section pink-bg flex-row-reverse"
+        id="home"
+      >
+        <img src="./assests/hero-img.svg" alt="background-hero" />
         <div
-          class="d-flex justify-content-center align-items-start flex-column mr-5"
+          class="d-flex justify-content-center align-items-start flex-column pr-5 my-3"
         >
-          <h1>Better digital experinence with Ninestars</h1>
-          <h4 class="text-muted font-weight-normal py-4">
-            We are team of talented designers making websites using bootstrap
+          <h1 class="h1 m-0">Better digital experinence with Ninestars</h1>
+          <h4 class="h5 text-muted font-weight-normal py-4">
+            We are team of talented designers making websites with bootstrap
           </h4>
           <button class="hl-button">Get Started</button>
         </div>
       </section>
       <section class="section my-3" id="about-us">
-        <img src="./assests/about-img.svg" alt="background-about" class="my-5 mr-5" />
+        <img
+          src="./assests/about-img.svg"
+          alt="background-about"
+          class="my-5 pr-5"
+        />
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h1>Voluptatem dignissimos provident quasi</h1>
-          <h2 class="text-muted my-3">
+          <h1 class="h1 m-0">Voluptatem dignissimos provident quasi</h1>
+          <h6 class="h6 text-muted my-3">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
             cumque accusantium ab delectus porro facere nisi quasi quo odio
-          </h2>
+          </h6>
           <div class="sub-flex-center">
             <div>
               <img src="./assests/list-view-50.png" alt="list" width="32px" />
-              <h4 class="mb-2">Corporis Volumptate sit</h4>
-              <h2 class="text-muted">
+              <h4 class="h5 my-2">Corporis Volumptate sit</h4>
+              <h2 class="h6 text-muted">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quisquam magnam tempora quod.
               </h2>
             </div>
             <div>
               <img src="./assests/cube-32.png" alt="cube" />
-              <h4 class="mb-2">Ullamco laboris nisi</h4>
-              <h2 class="text-muted">
+              <h4 class="h5 my-2">Ullamco laboris nisi</h4>
+              <h2 class="h6 text-muted">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
                 tempora quod.
               </h2>
@@ -144,50 +170,50 @@
           </div>
         </div>
       </section>
-      <section class="section pink-bg bottom-pad" id="services">
+      <section class="section pink-bg pb-5" id="services">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="gray-cl-lt">Services</h4>
-          <h1 class="text-center">Check out the great services we offer</h1>
-          <div class="bottom-bar"></div>
+          <h4 class="h5 text-muted">Services</h4>
+          <h1 class="h3 text-center">Check out the great services we offer</h1>
+          <div class="bottom-bar mb-5 pt-2"></div>
           <div class="sub-flex-center">
-            <div class="custom-card">
+            <div class="custom-card p-4 text-center">
               <img src="./assests/ball-60.png" alt="img-1" width="40px" />
-              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
-              <h2>
+              <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
+              <h2 class="h6 text-muted">
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card">
+            <div class="custom-card p-4 text-center">
               <img src="./assests/list-view-50.png" alt="img-2" width="40px" />
-              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
-              <h2>
+              <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
+              <h2 class="h6 text-muted">
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card">
+            <div class="custom-card p-4 text-center">
               <img
                 src="./assests/speedometer-50.png"
                 alt="img-3"
                 width="40px"
               />
-              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
-              <h2>
+              <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
+              <h2 class="h6 text-muted">
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card">
+            <div class="custom-card p-4 text-center">
               <img
                 src="./assests/earth-globe-64.png"
                 alt="img-4"
                 width="40px"
               />
-              <h4 class="pb-3">Lorem ipsum dolor sit amet</h4>
-              <h2>
+              <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
+              <h2 class="h6 text-muted">
                 Accusantium nemo, voluptatibus laboriosam ex ratione, at
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
@@ -195,13 +221,13 @@
           </div>
         </div>
       </section>
-      <section class="section bottom-pad" id="portfolio">
+      <section class="section py-5" id="portfolio">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="gray-cl-lt">Portfolio</h4>
-          <h1 class="text-center">Check out our beautiful portfolio</h1>
-          <div class="bottom-bar"></div>
+          <h4 class="h5 text-muted">Portfolio</h4>
+          <h1 class="h3 text-center">Check out our beautiful portfolio</h1>
+          <div class="bottom-bar mb-5 pt-2"></div>
           <div class="mb-4 font-weight-bold">
             <span class="hl-text mx-2">All</span>
             <span class="mx-2">App</span>
@@ -209,43 +235,77 @@
             <span class="mx-2">Web</span>
           </div>
           <div class="sub-flex-center flex-wrap">
-            <div class="img-card">
-              <img src="./assests/portfolio-1.jpg" alt="portfolio-1" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-1.jpg"
+                alt="portfolio-1"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-2.jpg" alt="portfolio-2" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-2.jpg"
+                alt="portfolio-2"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-3.jpg" alt="portfolio-3" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-3.jpg"
+                alt="portfolio-3"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-4.jpg" alt="portfolio-4" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-4.jpg"
+                alt="portfolio-4"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-5.jfif" alt="portfolio-5" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-5.jfif"
+                alt="portfolio-5"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-6.webp" alt="portfolio-6" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-6.webp"
+                alt="portfolio-6"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-7.webp" alt="portfolio-7" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-7.webp"
+                alt="portfolio-7"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-8.jpg" alt="portfolio-8" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-8.jpg"
+                alt="portfolio-8"
+                class="img-fluid"
+              />
             </div>
-            <div class="img-card">
-              <img src="./assests/portfolio-9.webp" alt="portfolio-9" />
+            <div class="img-card rounded">
+              <img
+                src="./assests/portfolio-9.webp"
+                alt="portfolio-9"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="section pink-bg flex-column"
-      >
+      <section class="section pink-bg flex-column">
         <div class="mb-3">
-          <h4 class="gray-cl-lt txt-center">F.A.Q</h4>
-          <h1 class="txt-center">Frequently Asked Questions</h1>
-          <div class="bottom-bar mx-auto"></div>
+          <h4 class="h5 text-muted text-center">F.A.Q</h4>
+          <h1 class="h3 text-center">Frequently Asked Questions</h1>
+          <div class="bottom-bar mb-5 pt-2 mx-auto"></div>
         </div>
         <div class="d-flex align-items-start flex-column">
           <div
@@ -256,7 +316,9 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 class="h6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
           </div>
           <div
             class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
@@ -266,7 +328,9 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>Sed praesentium repellendus eos accusantium quae.</h3>
+            <h3 class="h6">
+              Sed praesentium repellendus eos accusantium quae.
+            </h3>
           </div>
           <div
             class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
@@ -276,7 +340,7 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>laborum quos quas minima eligendi iure.</h3>
+            <h3 class="h6">laborum quos quas minima eligendi iure.</h3>
           </div>
           <div
             class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
@@ -286,7 +350,7 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>Voluptates fuga quibusdam nobis.</h3>
+            <h3 class="h6">Voluptates fuga quibusdam nobis.</h3>
           </div>
           <div
             class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
@@ -296,7 +360,7 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>Iure amet dolorum, commodi quo impedit.</h3>
+            <h3 class="h6">Iure amet dolorum, commodi quo impedit.</h3>
           </div>
           <div
             class="d-flex justify-content-start align-items-baseline bottom-gray mb-3 pb-2"
@@ -306,40 +370,42 @@
               alt="down-arrow"
               class="dropdown"
             />
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 class="h6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
           </div>
         </div>
       </section>
-      <section class="section bottom-pad" id="team">
+      <section class="section py-5" id="team">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="gray-cl-lt">Team</h4>
-          <h1 class="text-center">Our Team is always here to help</h1>
-          <div class="bottom-bar"></div>
+          <h4 class="h5 text-muted">Team</h4>
+          <h1 class="h3 text-center">Our Team is always here to help</h1>
+          <div class="bottom-bar mb-5 pt-2"></div>
           <div class="sub-flex-center">
             <div>
-              <img src="./assests/team-1.png" alt="team-1" class="team-img" />
+              <img src="./assests/team-1.png" alt="team-1" class="w-100" />
             </div>
             <div>
-              <img src="./assests/team-2.png" alt="team-2" class="team-img" />
+              <img src="./assests/team-2.png" alt="team-2" class="w-100" />
             </div>
             <div>
-              <img src="./assests/team-3.png" alt="team-3" class="team-img" />
+              <img src="./assests/team-3.png" alt="team-3" class="w-100" />
             </div>
             <div>
-              <img src="./assests/team-4.png" alt="team-4" class="team-img" />
+              <img src="./assests/team-4.png" alt="team-4" class="w-100" />
             </div>
           </div>
         </div>
       </section>
-      <section class="section pink-bg bottom-pad">
+      <section class="section pink-bg py-5">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="gray-cl-lt">Clients</h4>
-          <h1 class="text-center">They trusted us</h1>
-          <div class="bottom-bar"></div>
+          <h4 class="h5 text-muted">Clients</h4>
+          <h1 class="h3 text-center">They trusted us</h1>
+          <div class="bottom-bar mb-5 pt-2"></div>
           <div
             class="d-flex justify-content-center align-items-center flex-wrap"
             style="gap: 4rem"
@@ -350,27 +416,30 @@
             <img src="./assests/client-5.png" alt="client-5" width="100px" />
           </div>
           <div class="mt-2">
-            <div class="circle-icon"></div>
-            <div class="circle-icon" style="background-color: #e68a00"></div>
-            <div class="circle-icon"></div>
-            <div class="circle-icon"></div>
-            <div class="circle-icon"></div>
-            <div class="circle-icon"></div>
+            <div class="circle-icon d-inline-block p-1"></div>
+            <div
+              class="circle-icon d-inline-block p-1"
+              style="background-color: #e68a00"
+            ></div>
+            <div class="circle-icon d-inline-block p-1"></div>
+            <div class="circle-icon d-inline-block p-1"></div>
+            <div class="circle-icon d-inline-block p-1"></div>
+            <div class="circle-icon d-inline-block p-1"></div>
           </div>
         </div>
       </section>
-      <section class="section bottom-pad" id="contact">
+      <section class="section py-5" id="contact">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="gray-cl-lt">Contact Us</h4>
-          <h1 class="text-center">Contact us to get started</h1>
-          <div class="bottom-bar"></div>
+          <h4 class="h5 text-muted">Contact Us</h4>
+          <h1 class="h3 text-center">Contact us to get started</h1>
+          <div class="bottom-bar mb-5 pt-2"></div>
           <div class="sub-flex-center" style="gap: 2rem">
             <div
-              class="d-flex justify-content-center align-items-start flex-column address-card p-4"
+              class="col-md-5 col-sm-12 d-flex justify-content-center align-items-start flex-column address-card p-4"
             >
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center my-2">
                 <div class="pink-bg p-2 rounded-circle">
                   <img
                     src="./assests/place-marker-50.png"
@@ -379,20 +448,22 @@
                   />
                 </div>
                 <div class="ml-3">
-                  <h4 class="font-weight-bold py-2 text-muted">Location</h4>
-                  <h2 class="text-muted">A108 Adam Street, New York, NY 535022</h2>
+                  <h4 class="h4 font-weight-bold py-2 text-muted">Location</h4>
+                  <h2 class="h6 text-muted">
+                    A108 Adam Street, New York, NY 535022
+                  </h2>
                 </div>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center my-2">
                 <div class="pink-bg p-2 rounded-circle">
                   <img src="./assests/mail-50.png" alt="email" width="30px" />
                 </div>
                 <div class="ml-3">
-                  <h4 class="font-weight-bold py-2 text-muted">Email</h4>
-                  <h2 class="text-muted">info@example.com</h2>
+                  <h4 class="h4 font-weight-bold py-2 text-muted">Email</h4>
+                  <h2 class="h6 text-muted">info@example.com</h2>
                 </div>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center my-2">
                 <div class="pink-bg p-2 rounded-circle">
                   <img
                     src="./assests/cellphone-25.png"
@@ -401,15 +472,15 @@
                   />
                 </div>
                 <div class="ml-3">
-                  <h4 class="font-weight-bold py-2 text-muted">Call</h4>
-                  <h2 class="text-muted">+1 6733 675 866</h2>
+                  <h4 class="h4 font-weight-bold py-2 text-muted">Call</h4>
+                  <h2 class="h6 text-muted">+1 6733 675 866</h2>
                 </div>
               </div>
               <div>
                 <img src="./assests/location.png" alt="location" width="100%" />
               </div>
             </div>
-            <form action="#" class="address-card p-5">
+            <form action="#" class="col-md-7 col-sm-12 address-card p-5">
               <div class="container-md">
                 <div class="row">
                   <div class="col-md-6 px-0">
@@ -418,16 +489,31 @@
                   </div>
                   <div class="col-md-6 px-0">
                     <label for="email">Your Email</label>
-                    <input type="text" id="email" placeholder="your Email" />
+                    <input
+                      type="text"
+                      id="email"
+                      placeholder="your Email"
+                      class="w-100"
+                    />
                   </div>
                 </div>
                 <div class="row">
                   <label for="subject">Subject</label>
-                  <input type="text" id="subject" placeholder="Subject" />
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    class="w-100"
+                  />
                 </div>
                 <div class="row">
                   <label for="message">Message</label>
-                  <textarea name="message" id="message"></textarea>
+                  <textarea
+                    name="message"
+                    class="w-100"
+                    rows="10"
+                    id="message"
+                  ></textarea>
                 </div>
                 <div class="row d-flex justify-content-center mt-4">
                   <button type="submit" class="hl-button">Send Message</button>
@@ -437,40 +523,39 @@
           </div>
         </div>
       </section>
-      <section class="section pink-bg bottom-pad">
+      <section class="section pink-bg py-4">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h4 class="font-weight-bold mb-3">Join Our Newsletter</h4>
+          <h4 class="h5 font-weight-bold mb-3">Join Our Newsletter</h4>
           <p class="text-muted text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
             labore velit fugit.
           </p>
           <div class="d-flex align-items-stretch pb-4">
-            <input type="text" class="white-box" style="width: 100%;"/>
+            <input type="text" class="white-box" style="width: 100%" />
             <button class="hl-button">Subscribe</button>
           </div>
         </div>
       </section>
-      <section class="section bottom-pad pt-5">
+      <section class="section pb-5 pt-5">
         <div id="footer-section">
           <div class="mb-4">
-            <h1 class="font-weight-light">Ninestars</h1>
-            <h2 class="mb-4 mt-2 text-muted w-50" style="line-height: 1.25rem;">
+            <h1 class="h1 font-weight-light">Ninestars</h1>
+            <h2 class="h6 mb-4 mt-2 text-muted w-50">
               A108 Adam Street, New York, NY 535022, United States
             </h2>
-            <h2 class="text-muted">
-              <span class="font-weight-bold">Phone:</span> +1
-              6733 675 866
+            <h2 class="h6 text-muted">
+              <span class="font-weight-bold">Phone:</span> +1 6733 675 866
             </h2>
-            <h2 class="text-muted">
+            <h2 class="h6 text-muted">
               <span class="font-weight-bold">Email:</span>
               info@example.com
             </h2>
           </div>
           <div>
-            <h3>Useful Links</h3>
-            <ul class="styled-list text-muted">
+            <h3 class="h6">Useful Links</h3>
+            <ul class="styled-list pl-1 text-muted">
               <li>Home</li>
               <li>About</li>
               <li>Services</li>
@@ -479,8 +564,8 @@
             </ul>
           </div>
           <div>
-            <h3>Our Services</h3>
-            <ul class="styled-list text-muted">
+            <h3 class="h6">Our Services</h3>
+            <ul class="styled-list pl-1 text-muted">
               <li>Web Design</li>
               <li>Web Development</li>
               <li>Product Managment</li>
@@ -489,11 +574,11 @@
             </ul>
           </div>
           <div>
-            <h3>Our Social Networks</h3>
-            <h2>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-              architecto aperiam necessitatibus placeat.
-            </h2>
+            <h3 class="h6">Our Social Networks</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Officiis.
+            </p>
             <div class="pb-3">
               <div class="social-icons">
                 <i class="bi bi-twitter"></i>
