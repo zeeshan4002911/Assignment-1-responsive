@@ -41,7 +41,7 @@
         class="d-flex justify-content-between align-items-center py-2 px-md-5"
         id="navbar"
       >
-        <div class="h2 font-weight-normal px-2">Ninestars</div>
+        <div class="h2 font-weight-normal px-3 mb-0">Ninestars</div>
         <div>
           <ul class="mb-0 d-lg-block d-none list-style-none">
             <li class="p-2">
@@ -75,7 +75,7 @@
             </li>
           </ul>
           <div class="d-sm-block d-md-none">
-            <div class="btn-group collapse">
+            <div class="btn-group collapse mx-2">
               <button
                 type="button"
                 class="btn btn-light rounded"
@@ -122,63 +122,73 @@
         </div>
       </div>
       <section
-        class="section pink-bg flex-row-reverse"
+        class="container-md p-md-5 p-sm-1 section d-flex pink-bg justify-content-center"
         id="home"
       >
-        <img src="./assests/hero-img.svg" alt="background-hero" />
-        <div
-          class="d-flex justify-content-center align-items-start flex-column pr-5 my-3"
-        >
-          <h1 class="h1 m-0">Better digital experinence with Ninestars</h1>
-          <h4 class="h5 text-muted font-weight-normal py-4">
-            We are team of talented designers making websites with bootstrap
-          </h4>
-          <button class="hl-button">Get Started</button>
+        <div class="row flex-sm-row-reverse">
+          <img
+            class="col-md-6 col-sm-12"
+            src="./assests/hero-img.svg"
+            alt="background-hero"
+          />
+          <div
+            class="col-md-6 col-sm-12 d-flex justify-content-center align-items-start flex-column pr-5 my-3"
+          >
+            <h1 class="h1 m-0">Better digital experinence with Ninestars</h1>
+            <h4 class="h5 text-muted font-weight-normal py-4">
+              We are team of talented designers making websites with bootstrap
+            </h4>
+            <button class="hl-button">Get Started</button>
+          </div>
         </div>
       </section>
-      <section class="section my-3" id="about-us">
-        <img
-          src="./assests/about-img.svg"
-          alt="background-about"
-          class="my-5 pr-5"
-        />
-        <div
-          class="d-flex justify-content-center align-items-center flex-column"
-        >
-          <h1 class="h1 m-0">Voluptatem dignissimos provident quasi</h1>
-          <h6 class="h6 text-muted my-3">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-            cumque accusantium ab delectus porro facere nisi quasi quo odio
-          </h6>
-          <div class="sub-flex-center">
-            <div>
-              <img src="./assests/list-view-50.png" alt="list" width="32px" />
-              <h4 class="h5 my-2">Corporis Volumptate sit</h4>
-              <h2 class="h6 text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quisquam magnam tempora quod.
-              </h2>
-            </div>
-            <div>
-              <img src="./assests/cube-32.png" alt="cube" />
-              <h4 class="h5 my-2">Ullamco laboris nisi</h4>
-              <h2 class="h6 text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-                tempora quod.
-              </h2>
+      <section class="container-md p-md-5 p-sm-1 section my-3" id="about-us">
+        <div class="row">
+          <img
+            src="./assests/about-img.svg"
+            alt="background-about"
+            class="col-md-6 col-sm-12 my-5 pr-5"
+          />
+          <div
+            class="container-md col-md-6 col-sm-12 d-flex justify-content-center align-items-center flex-column"
+          >
+            <h1 class="h1 m-0">Voluptatem dignissimos provident quasi</h1>
+            <h6 class="h6 text-muted my-3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              cumque accusantium ab delectus porro facere nisi quasi quo odio
+            </h6>
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <img src="./assests/list-view-50.png" alt="list" width="32px" />
+                <h4 class="h5 my-2">Corporis Volumptate sit</h4>
+                <h2 class="h6 text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quisquam magnam tempora quod.
+                </h2>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <img src="./assests/cube-32.png" alt="cube" />
+                <h4 class="h5 my-2">Ullamco laboris nisi</h4>
+                <h2 class="h6 text-muted">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Magnam tempora quod.
+                </h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section pink-bg pb-5" id="services">
+      <section class="container-md p-md-5 p-sm-1 section pink-bg" id="services">
         <div
-          class="d-flex justify-content-center align-items-center flex-column"
+          class="container-md py-5 d-flex justify-content-center align-items-center flex-column"
         >
           <h4 class="h5 text-muted">Services</h4>
           <h1 class="h3 text-center">Check out the great services we offer</h1>
           <div class="bottom-bar mb-5 pt-2"></div>
-          <div class="sub-flex-center">
-            <div class="custom-card p-4 text-center">
+          <div class="row">
+            <div
+              class="col-md-2 col-sm-12 m-2 custom-card mx-1 p-4 text-center"
+            >
               <img src="./assests/ball-60.png" alt="img-1" width="40px" />
               <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
               <h2 class="h6 text-muted">
@@ -186,7 +196,9 @@
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card p-4 text-center">
+            <div
+              class="col-md-2 col-sm-12 m-2 custom-card mx-1 p-4 text-center"
+            >
               <img src="./assests/list-view-50.png" alt="img-2" width="40px" />
               <h4 class="h5 py-3">Lorem ipsum dolor sit amet</h4>
               <h2 class="h6 text-muted">
@@ -194,7 +206,9 @@
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card p-4 text-center">
+            <div
+              class="col-md-2 col-sm-12 m-2 custom-card mx-1 p-4 text-center"
+            >
               <img
                 src="./assests/speedometer-50.png"
                 alt="img-3"
@@ -206,7 +220,9 @@
                 quaerat, maiores suscipit doloribus inventore temporibus saepe.
               </h2>
             </div>
-            <div class="custom-card p-4 text-center">
+            <div
+              class="col-md-2 col-sm-12 m-2 custom-card mx-1 p-4 text-center"
+            >
               <img
                 src="./assests/earth-globe-64.png"
                 alt="img-4"
@@ -221,9 +237,9 @@
           </div>
         </div>
       </section>
-      <section class="section py-5" id="portfolio">
+      <section class="container-md section p-md-5 p-sm-1" id="portfolio">
         <div
-          class="d-flex justify-content-center align-items-center flex-column"
+          class="row d-flex justify-content-center align-items-center flex-column"
         >
           <h4 class="h5 text-muted">Portfolio</h4>
           <h1 class="h3 text-center">Check out our beautiful portfolio</h1>
@@ -234,74 +250,76 @@
             <span class="mx-2">Card</span>
             <span class="mx-2">Web</span>
           </div>
-          <div class="sub-flex-center flex-wrap">
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-1.jpg"
-                alt="portfolio-1"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-2.jpg"
-                alt="portfolio-2"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-3.jpg"
-                alt="portfolio-3"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-4.jpg"
-                alt="portfolio-4"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-5.jfif"
-                alt="portfolio-5"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-6.webp"
-                alt="portfolio-6"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-7.webp"
-                alt="portfolio-7"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-8.jpg"
-                alt="portfolio-8"
-                class="img-fluid"
-              />
-            </div>
-            <div class="img-card rounded">
-              <img
-                src="./assests/portfolio-9.webp"
-                alt="portfolio-9"
-                class="img-fluid"
-              />
+          <div class="container-md">
+            <div class="row m-0">
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-1.jpg"
+                  alt="portfolio-1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-2.jpg"
+                  alt="portfolio-2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-3.jpg"
+                  alt="portfolio-3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-4.jpg"
+                  alt="portfolio-4"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-5.jfif"
+                  alt="portfolio-5"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-6.webp"
+                  alt="portfolio-6"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-7.webp"
+                  alt="portfolio-7"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-8.jpg"
+                  alt="portfolio-8"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-4 col-sm-12 my-3 rounded">
+                <img
+                  src="./assests/portfolio-9.webp"
+                  alt="portfolio-9"
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section pink-bg flex-column">
+      <section class="container-md p-md-5 p-sm-1 section pink-bg flex-column">
         <div class="mb-3">
           <h4 class="h5 text-muted text-center">F.A.Q</h4>
           <h1 class="h3 text-center">Frequently Asked Questions</h1>
@@ -376,30 +394,32 @@
           </div>
         </div>
       </section>
-      <section class="section py-5" id="team">
+      <section class="section p-md-5 p-sm-1" id="team">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <h4 class="h5 text-muted">Team</h4>
           <h1 class="h3 text-center">Our Team is always here to help</h1>
           <div class="bottom-bar mb-5 pt-2"></div>
-          <div class="sub-flex-center">
-            <div>
-              <img src="./assests/team-1.png" alt="team-1" class="w-100" />
-            </div>
-            <div>
-              <img src="./assests/team-2.png" alt="team-2" class="w-100" />
-            </div>
-            <div>
-              <img src="./assests/team-3.png" alt="team-3" class="w-100" />
-            </div>
-            <div>
-              <img src="./assests/team-4.png" alt="team-4" class="w-100" />
+          <div class="container-md">
+            <div class="row">
+              <div class="col-md-3 my-2">
+                <img src="./assests/team-1.png" alt="team-1" class="w-100" />
+              </div>
+              <div class="col-md-3 my-2">
+                <img src="./assests/team-2.png" alt="team-2" class="w-100" />
+              </div>
+              <div class="col-md-3 my-2">
+                <img src="./assests/team-3.png" alt="team-3" class="w-100" />
+              </div>
+              <div class="col-md-3 my-2">
+                <img src="./assests/team-4.png" alt="team-4" class="w-100" />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section pink-bg py-5">
+      <section class="section pink-bg p-md-5 p-sm-1">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
@@ -428,16 +448,16 @@
           </div>
         </div>
       </section>
-      <section class="section py-5" id="contact">
+      <section class="section p-md-5 p-sm-1" id="contact">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
           <h4 class="h5 text-muted">Contact Us</h4>
           <h1 class="h3 text-center">Contact us to get started</h1>
           <div class="bottom-bar mb-5 pt-2"></div>
-          <div class="sub-flex-center" style="gap: 2rem">
+          <div class="row">
             <div
-              class="col-md-5 col-sm-12 d-flex justify-content-center align-items-start flex-column address-card p-4"
+              class="col-md-4 col-sm-12 d-flex justify-content-center align-items-start flex-column address-card p-4"
             >
               <div class="d-flex align-items-center my-2">
                 <div class="pink-bg p-2 rounded-circle">
@@ -523,7 +543,7 @@
           </div>
         </div>
       </section>
-      <section class="section pink-bg py-4">
+      <section class="section pink-bg p-md-5 p-sm-1">
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
@@ -538,7 +558,7 @@
           </div>
         </div>
       </section>
-      <section class="section pb-5 pt-5">
+      <section class="section p-md-5 p-sm-1">
         <div id="footer-section">
           <div class="mb-4">
             <h1 class="h1 font-weight-light">Ninestars</h1>
