@@ -148,12 +148,17 @@ textarea {
 
 /* Media Query for Mobile View fix*/
 
-@media only screen and (max-width: 500px) {  
+@media only screen and (max-width: 500px) {
   #name {
     width: 100%;
   }
 
   #home h1 {
     font-size: 25px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
